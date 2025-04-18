@@ -43,7 +43,7 @@ public class CourseController {
         return courses.stream()
                 .filter(c -> c.getName().equals(name))
                 .findFirst()
-                .orElseThrow(() -> new ApiException("Course not found with name: " + name, HttpStatus.BAD_REQUEST));
+                .orElseThrow(() -> new ApiException("Course not found with name: " + name, HttpStatus.NOT_FOUND));
     }
 
 
