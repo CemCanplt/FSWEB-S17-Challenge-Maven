@@ -1,11 +1,11 @@
-package com.workintech.spring17challenge.model;
+package com.workintech.spring17challenge.entity;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class LowCourseGpa implements CourseGpa {
     @Override
-    public int grtGpa() {
+    public int getGpa() {
         return 3;
     }
 }
